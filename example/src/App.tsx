@@ -7,12 +7,16 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    AppInfo.multiply(3, 7).then(setResult);
+    setResult(AppInfo);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>AppVersion: {result.appVersion}</Text>
+      <Text>BuildVersion: {result.buildVersion}</Text>
+      <Text>BundleIdentifier: {result.bundleIdentifier}</Text>
+      <Text>Flavor: {result.flavor}</Text>
+      <Text>DeviceModel: {result.deviceModel}</Text>
     </View>
   );
 }

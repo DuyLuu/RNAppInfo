@@ -5,7 +5,7 @@ Get App info iOS and android platform
 ## Installation
 
 ```sh
-npm install react-native-app-info
+yarn add https://github.com/DuyLuu/RNAppInfo
 ```
 
 ## Usage

@@ -15,7 +15,7 @@ import AppInfo from "react-native-app-info";
 
 // ...
 
-const result = await AppInfo.multiply(3, 7);
+const { appVersion, buildVersion, bundleIdentifier, flavor, deviceModel } = AppInfo;
 ```
 
 ## Contributing
